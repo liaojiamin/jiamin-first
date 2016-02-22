@@ -1,0 +1,1 @@
+java -Xms512M -Xmx512M -Xss1024K -XX:PermSize=256m -XX:MaxPermSize=512m -cp KafkaOffsetMonitor-assembly-0.2.0.jar  com.quantifind.kafka.offsetapp.OffsetGetterWeb --zk 10.79.96.52:2181 --port 8086 --refresh 10.seconds --retain 7.days 1>/kafka-offset-console/logs/stdout.log 2>/kafka-offset-console/logs/stderr.log & 
